@@ -1,0 +1,20 @@
+# Requirements for AtomicFactGenerator with SQLite3 caching
+# This project uses only Python standard library modules for minimal dependencies
+
+# Core functionality uses:
+# - sqlite3 (built-in)
+# - hashlib (built-in)
+# - json (built-in)
+# - threading (built-in)
+# - logging (built-in)
+# - pathlib (built-in)
+# - time (built-in)
+# - typing (built-in)
+# - contextlib (built-in)
+
+# Optional: For development and testing
+# unittest (built-in)
+# tempfile (built-in)
+
+# No external dependencies required!
+# This design choice ensures easy deployment and minimal maintenance overhead.
