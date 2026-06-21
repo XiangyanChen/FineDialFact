@@ -45,7 +45,7 @@ Install the project dependencies with:
 pip install -r requirements.txt
 ```
 
-The provided requirements file includes the main packages used by the project, including `torch`, `transformers`, `datasets`, `sentence-transformers`, `faiss`, `spacy`, `evaluate`, and other supporting libraries. [file:130]
+The provided requirements file includes the main packages used by the project, including `torch`, `transformers`, `datasets`, `sentence-transformers`, `faiss`, `spacy`, `evaluate`, and other supporting libraries. 
 
 ## Pipeline
 
@@ -61,7 +61,7 @@ TEMPERATURE=0
 
 ### Evaluation for human annotated data
 
-
+```bash
 python eval.py \
   --dataset $DATASET \
   --mode $MODE \
@@ -70,17 +70,19 @@ python eval.py \
   --batch_size 10 \
   --temperature $TEMPERATURE \
   --skip_non_factual_claim
+```
 
 ### Evaluation for GPT-annotated data
 
+```bash
 python eval_atomic_facts.py \
   --dataset $DATASET \
   --mode $MODE \
   --model $MODEL \
   --distill_mode $DISTILL_MODE \
   --batch_size 10 \
-  --temperature $TEMPERATURE \
-
+  --temperature $TEMPERATURE
+```
 
 ## Citation
 
