@@ -23,9 +23,7 @@ def read_json_file(input_path):
 def json_file_to_excel(input_path, output_path):
     data = read_json_file(input_path)
 
-    # 将数据转换为 DataFrame
     df = pd.DataFrame(data)
-    # 将 DataFrame 写入 Excel 文件
     excel_path = output_path
     df.to_excel(excel_path, index=False)
 
@@ -49,7 +47,7 @@ def set_global_seeds(seed):
     torch.manual_seed(seed)
     if torch.cuda.is_available():
         torch.cuda.manual_seed(seed)
-        torch.cuda.manual_seed_all(seed)  # 如果有多个GPU
+        torch.cuda.manual_seed_all(seed)
         torch.backends.cudnn.deterministic = True
         torch.backends.cudnn.benchmark = False
 
