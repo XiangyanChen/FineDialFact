@@ -4,6 +4,8 @@
 
 FineDialFact is a benchmark for fine-grained dialogue fact verification introduced in LREC2026. The benchmark decomposes dialogue responses into atomic facts and verifies each fact independently, which makes it possible to handle responses that contain a mix of correct, incorrect, and non-verifiable information. It is built from public dialogue datasets and evaluated with several baseline methods, including Chain-of-Thought prompting and reasoning distillation. The paper reports that the task remains challenging, especially on the human-annotated HybriDialogue set.
 
+## Data
+The human-annotated data is available in this repository, while the GPT-annotated data can be downloaded from [this link](https://drive.google.com/file/d/1RJPKWJA3qD_rz7_Ovpd34NqGccIz6ZCl/view?usp=drive_link).
 
 ## Data Format
 
